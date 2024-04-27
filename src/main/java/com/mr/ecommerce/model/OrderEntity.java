@@ -16,7 +16,7 @@ import java.util.Date;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Order extends BaseEntity{
+public class OrderEntity extends BaseEntity{
 
     @Column(name = "customer_id", nullable = false)
     Integer customerId;

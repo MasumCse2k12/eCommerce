@@ -1,7 +1,9 @@
 package com.mr.ecommerce.service;
 
-import org.springframework.stereotype.Service;
+import com.mr.ecommerce.payload.ProductDto;
 
-@Service
-public class CustomerService {
+import java.util.List;
+
+public interface CustomerService {
+    public List<ProductDto> getWishlist(Integer customerId);
 }

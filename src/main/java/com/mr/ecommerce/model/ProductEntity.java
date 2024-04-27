@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Product extends BaseEntity {
+public class ProductEntity extends BaseEntity {
 
     @Column(name = "name", nullable = false)
     String name;

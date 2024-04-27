@@ -6,9 +6,6 @@ import jakarta.persistence.Table;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
-import java.math.BigDecimal;
-import java.util.Date;
-
 @Entity
 @Table(name = "order_item")
 @Data
@@ -16,11 +13,12 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Sales extends BaseEntity {
+public class OrderItemEntity extends BaseEntity {
+
+    @Column(name = "order_id", nullable = false)
+    Integer orderId;
     @Column(name = "product_id", nullable = false)
     Integer productId;
-    @Column(name = "sale_date")
-    Date saleDate;
-    @Column(name = "amount", nullable = false)
-    BigDecimal amount;
+    @Column(name = "quantity", nullable = false)
+    Integer quantity;
 }
