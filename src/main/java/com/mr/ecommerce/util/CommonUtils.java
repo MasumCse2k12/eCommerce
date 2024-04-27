@@ -1,4 +1,4 @@
-package com.mr.ecommerce.util.enums;
+package com.mr.ecommerce.util;
 
 import java.time.LocalDate;
 import java.time.ZoneId;

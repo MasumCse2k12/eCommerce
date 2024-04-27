@@ -3,7 +3,7 @@ package com.mr.ecommerce.service;
 import com.mr.ecommerce.model.ProductEntity;
 import com.mr.ecommerce.payload.ProductDto;
 import com.mr.ecommerce.repository.ProductRepository;
-import com.mr.ecommerce.util.enums.CommonUtils;
+import com.mr.ecommerce.util.CommonUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
