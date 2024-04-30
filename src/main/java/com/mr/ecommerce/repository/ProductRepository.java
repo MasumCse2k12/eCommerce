@@ -29,7 +29,7 @@ public interface ProductRepository extends JpaRepository<ProductEntity, Integer>
             " INNER JOIN OrderEntity oe on oie.orderId = oe.id " +
             " INNER JOIN SalesEntity se on se.productId = pe.id " +
             "   WHERE se.saleDate >= :startDate " +
-            "   and se.saleDate <= :saleDate " +
+            "   and se.saleDate <= :endDate " +
             " ORDER BY oie.quantity DESC LIMIT 5")
     List<ProductEntity> findLastMonthTop5ItemsBySaleQuantity(Date startDate, Date endDate);
 }

@@ -14,7 +14,8 @@ import lombok.experimental.FieldDefaults;
 public class BaseEntity extends BaseDomain {
 
     @Id
-    @GeneratedValue(generator = "id")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "id")
+    @SequenceGenerator(name = "id", sequenceName = "id", allocationSize = 1)
     @Column(name = "id", nullable = false)
     Integer id;
 

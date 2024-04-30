@@ -62,3 +62,6 @@ CREATE TABLE if not exists sales (
     created timestamp,
     updated timestamp
 );
+
+
+ALTER TABLE order_item alter column quantity type integer;
